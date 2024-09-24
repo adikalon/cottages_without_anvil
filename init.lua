@@ -7,13 +7,13 @@ minetest.clear_craft({
 })
 
 if minetest.get_modpath("mobs_npc") then
-	table.insert(mobs.human.items, {"cottages:anvil", "default:gold_ingot 150", 10})
+	table.insert(mobs.human.items, {"cottages:anvil", "default:gold_ingot 70", 10})
 	table.insert(mobs.human.items, {"cottages:hammer", "default:gold_ingot 50", 10})
 end
 
 if minetest.get_modpath("lootchests_default") then
 	local items = {
-		{"cottages:anvil"},
+		-- {"cottages:anvil"},
 		{"cottages:hammer"},
 	}
 
@@ -26,14 +26,14 @@ end
 
 if minetest.get_modpath("dungeon_loot") then
 	dungeon_loot.register({
-		{name = "cottages:anvil", chance = 1, count = {1, 1}, y = {-31000, 31000}},
+		-- {name = "cottages:anvil", chance = 1, count = {1, 1}, y = {-31000, 31000}},
 		{name = "cottages:hammer", chance = 1, count = {1, 1}, y = {-31000, 31000}},
 	})
 end
 
 if minetest.get_modpath("bones_loot") then
 	bones_loot.register_loot({
-		{name = "cottages:anvil", chance = 1, count = {1, 1}, types = {"underworld_warrior"}},
+		-- {name = "cottages:anvil", chance = 1, count = {1, 1}, types = {"underworld_warrior"}},
 		{name = "cottages:hammer", chance = 1, count = {1, 1}, types = {"underworld_warrior"}},
 	})
 end
