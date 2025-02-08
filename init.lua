@@ -7,8 +7,8 @@ minetest.clear_craft({
 })
 
 if minetest.get_modpath("mobs_npc") then
-	table.insert(mobs.human.items, {"cottages:anvil", "default:gold_ingot 70", 10})
-	table.insert(mobs.human.items, {"cottages:hammer", "default:gold_ingot 50", 10})
+	table.insert(mobs.human.items, {"cottages:anvil", "default:gold_ingot 10", 10})
+	table.insert(mobs.human.items, {"cottages:hammer", "default:gold_ingot 5", 10})
 end
 
 if minetest.get_modpath("lootchests_default") then
